@@ -145,7 +145,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 700px;
-        margin: 75px auto auto;
+    margin: 75px;
   }
   .subdescription {
     grid-column: span 2;
@@ -165,5 +165,8 @@ footer {
   }
   .attribution {
     font-size: 1.3rem;
+  }
+  footer{
+    margin-top:auto;
   }
 }
