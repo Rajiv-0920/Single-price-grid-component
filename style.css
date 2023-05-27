@@ -29,9 +29,10 @@ body {
   justify-content: center;
   background-color: var(--lightGray);
   position: relative;
+  line-height: calc(1em + 0.5rem);
 }
 .container {
-  margin: 50px 0;
+  margin: 75px auto 50px;
   width: 80%;
 }
 .subdescription {
@@ -53,7 +54,6 @@ body {
 .subdescription p {
   color: var(--grayishBlue);
   font-size: 1.1rem;
-  line-height: 2rem;
 }
 .subscription-details {
   padding: 20px;
@@ -61,6 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: space-evenly;
 }
 .subscription-details h3 {
   color: var(--white);
@@ -75,7 +76,6 @@ body {
 }
 p {
   color: var(--white);
-  margin-top: 5px;
   font-size: 1.2rem;
 }
 .subscription-details button.sign-up {
@@ -101,14 +101,13 @@ p {
   font-size: 1rem;
   list-style: none;
   font-weight: 400;
-  margin: 3px 0;
   color: var(--lightGray);
 }
 footer {
   padding: 10px 0;
+  align-items: flex-end;
   background-color: #fff;
   width: 100%;
-  margin-top: 30px;
 }
 .attribution {
   font-size: 11px;
@@ -123,6 +122,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 70%;
+    margin: 75px auto auto;
   }
   .subdescription {
     grid-column: span 2;
@@ -135,11 +135,6 @@ footer {
   .subscription-details {
     padding: 30px;
     border-radius: 0 0 0 5px;
-  }
-  footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
   }
 }
 @media (min-width: 750px) {
