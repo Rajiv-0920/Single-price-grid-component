@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --off-cyan: hsla(179, 62%, 43%, 0.699);
+  --brightYellow: hsl(71, 73%, 54%);
+
+  /* ### Neutral */
+
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightGray);
+  position: relative;
+}
+.container {
+  margin: 50px 0;
+  width: 80%;
+}
+.subdescription {
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px 5px 0 0;
+}
+.subdescription h1 {
+  color: var(--cyan);
+  font-size: 2rem;
+}
+.subdescription h2 {
+  color: var(--brightYellow);
+  font-size: 1.6rem;
+}
+.subdescription p {
+  color: var(--grayishBlue);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.subscription-details {
+  padding: 20px;
+  background-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.subscription-details h3 {
+  color: var(--white);
+}
+.subscription-details .price-container .price {
+  color: var(--white);
+  font-size: 3rem;
+}
+.price-container .price span {
+  color: var(--lightGray);
+  font-size: 1.2rem;
+}
+p {
+  color: var(--white);
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+.subscription-details button.sign-up {
+  background-color: var(--brightYellow);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 2px #00000015, 0 2px 4px #00000015, 0 8px 16px #00000015,
+    0 16px 32px #00000015, 0 32px 64px #00000015;
+  cursor: pointer;
+}
+.feedback {
+  padding: 20px;
+  background-color: var(--off-cyan);
+  color: var(--white);
+  border-radius: 0 0 5px 5px;
+}
+.feedback ul {
+  margin-top: 20px;
+}
+.feedback li {
+  font-size: 1rem;
+  list-style: none;
+  font-weight: 400;
+  margin: 3px 0;
+  color: var(--lightGray);
+}
+footer {
+  padding: 10px 0;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+}
+.attribution a {
+  color: var(--cyan);
+}
+@media (min-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+  }
+  .subdescription {
+    grid-column: span 2;
+    padding: 30px;
+  }
+  .feedback {
+    padding: 30px;
+    border-radius: 0 0 5px 0;
+  }
+  .subscription-details {
+    padding: 30px;
+    border-radius: 0 0 0 5px;
+  }
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+  }
+  .subdescription {
+    grid-column: span 2;
+    padding: 40px;
+  }
+  .feedback {
+    padding: 40px;
+    border-radius: 0 0 5px 0;
+  }
+  .subscription-details {
+    padding: 40px;
+    border-radius: 0 0 0 5px;
+  }
+  button.sign-up {
+    padding: 15px !important;
+    font-size: 1.2rem;
+  }
+  .attribution {
+    font-size: 1.3rem;
+  }
+}
